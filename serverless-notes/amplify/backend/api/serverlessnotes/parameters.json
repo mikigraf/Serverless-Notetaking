@@ -1,0 +1,10 @@
+{
+    "AppSyncApiName": "serverlessnotes",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authserverlessnotes180854db",
+            "Outputs.UserPoolId"
+        ]
+    }
+}
